@@ -79,7 +79,7 @@ function App() {
   return (
     <>
       <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename="/FirstReact">
       <Header />
      <Routes>
      <Route path="/" element={<Home />}/>
