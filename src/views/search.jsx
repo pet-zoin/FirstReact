@@ -21,7 +21,6 @@ function Search() {
   const goodsSnapshot = await getDocs(goodsCol);
   const goodsList = await goodsSnapshot.docs.map(doc => (
    {id: doc.id, ...doc.data()}));
-    alert("it's done!");
     return Array.from(goodsList);
 }
 
